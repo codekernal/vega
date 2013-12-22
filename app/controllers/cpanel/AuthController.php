@@ -6,6 +6,8 @@ use \Input;
 use \Validator;
 use \Hash;
 use \Session;
+
+
 class AuthController extends BaseController {
 
 	/*

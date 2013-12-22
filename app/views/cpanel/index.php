@@ -22,11 +22,14 @@
         <label class="checkbox">
           <input type="checkbox" value="remember-me"> Remember me
         </label>
-        <button class="btn btn-large btn-primary" type="submit">Sign in</button>
+        <button class="btn btn-large btn-primary" type="button" onclick="login();">Sign in</button>
+
       </form>
 
     </div> <!-- /container -->
     <script src="vendors/jquery-1.9.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/config.js"></script>    
+    <script src="bootstrap/js/functions.js"></script>        
   </body>
 </html>

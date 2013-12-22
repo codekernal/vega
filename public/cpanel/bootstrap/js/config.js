@@ -1,5 +1,6 @@
 var config = {
 
-    env: 'dev'
+    web_url: 'httP://localhost/vega/public/'
 
 };
+
