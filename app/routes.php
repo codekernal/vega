@@ -41,14 +41,10 @@ Route::get('cpanel/dashboard', function()
 
 
 Route::group(['prefix' => 'cpanel'], function () {
-	// View Routes
-	Route::get('/index', function()
-	{
-		return View::make('cpanel.index');
-	});
 
-	// Api Routes
 	Route::controller('/login', 'Cpanel\AuthController');
+	Route::controller('/category', 'Cpanel\CategoryController');
+	Route::controller('/client', 'Cpanel\ClientController');
 
 });
 
