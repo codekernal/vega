@@ -45,6 +45,9 @@ Route::group(['prefix' => 'cpanel'], function () {
 	Route::controller('/login', 'Cpanel\AuthController');
 	Route::controller('/category', 'Cpanel\CategoryController');
 	Route::controller('/client', 'Cpanel\ClientController');
+	Route::controller('/project','Cpanel\ProjectController');
+	Route::controller('/projectmedia','Cpanel\ProjectMediaController');
+
 
 });
 

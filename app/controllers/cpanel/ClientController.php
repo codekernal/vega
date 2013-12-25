@@ -129,7 +129,7 @@ class ClientController extends BaseController {
 		}
 		else
 		{
-			$client = Client::get();
+			$client = Client::take(10)->skip(0)->get();
 			$client = $client->toArray();
 			//var_dump($client->toArray());
 		}

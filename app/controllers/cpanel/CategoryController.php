@@ -114,7 +114,7 @@ class CategoryController extends BaseController {
 		}
 		else
 		{
-			$category = AdminCategory::get();
+			$category = AdminCategory::take(10)->skip(0)->get();
 			$category = $category->toArray();
 			//var_dump($category->toArray());
 		}
