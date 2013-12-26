@@ -47,7 +47,14 @@ Route::group(['prefix' => 'cpanel'], function () {
 	Route::controller('/client', 'Cpanel\ClientController');
 	Route::controller('/project','Cpanel\ProjectController');
 	Route::controller('/projectmedia','Cpanel\ProjectMediaController');
+	route::controller('/testimonial','Cpanel\TestimonialController');
 
+	Route::get('/cpanel/',function(){
+	
+  	  		return View::make('Cpanel.try');
+  	  	
+	}
+);
 
 });
 
